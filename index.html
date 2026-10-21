@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eeeb">
+  <meta name="description" content="Apresentação visual sobre eletrólise ígnea e aquosa, reações de adição e substituição.">
+  <title>Química em transformação | Eletroquímica e orgânica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="presentation" aria-label="Apresentação de química">
+    <header class="topbar">
+      <a class="wordmark" href="#slide-1" aria-label="Início da apresentação">
+        <span class="wordmark-mark" aria-hidden="true">Q</span>
+        <span>QUÍMICA <span class="wordmark-light">EM TRANSFORMAÇÃO</span></span>
+      </a>
+      <div class="topbar-actions">
+        <div class="accessibility-tools" role="group" aria-label="Controles de acessibilidade">
+          <button class="accessibility-button" id="text-smaller" type="button" aria-label="Diminuir o tamanho do texto" title="Diminuir o texto">A−</button>
+          <button class="accessibility-button" id="text-larger" type="button" aria-label="Aumentar o tamanho do texto" title="Aumentar o texto">A+</button>
+          <button class="accessibility-button" id="contrast-toggle" type="button" aria-label="Ativar alto contraste" title="Ativar alto contraste" aria-pressed="false">◐</button>
+          <button class="accessibility-button" id="motion-toggle" type="button" aria-label="Reduzir animações" title="Reduzir animações" aria-pressed="false">Ⅱ</button>
+          <span class="sr-only" id="accessibility-status" aria-live="polite"></span>
+        </div>
+        <div class="topbar-meta"><span class="status-dot"></span> GUIA DE ESTUDO <span class="meta-divider">/</span> 2026</div>
+      </div>
+    </header>
+
+    <div class="deck-layout">
+      <aside class="side-rail" aria-label="Índice dos slides">
+        <p class="rail-label">ROTEIRO</p>
+        <nav class="slide-index" id="slide-index"></nav>
+        <p class="rail-hint">USE <kbd>←</kbd> <kbd>→</kbd><br>PARA NAVEGAR</p>
+      </aside>
+
+      <div class="slide-stage" id="slide-stage" aria-live="polite" aria-atomic="true">
+        <section class="slide slide-cover is-active" id="slide-1" data-title="Começo" aria-labelledby="title-1">
+          <div class="cover-copy">
+            <p class="eyebrow"><span class="eyebrow-number">01</span> ELETROQUÍMICA + ORGÂNICA</p>
+            <h1 id="title-1">Matéria em<br><em>movimento.</em></h1>
+            <p class="cover-lede">O que muda quando a corrente elétrica força uma reação — e quando átomos se reorganizam em moléculas orgânicas.</p>
+            <blockquote class="cover-quote"><p>“A alma toma a cor dos pensamentos.”</p><cite>MARCO AURÉLIO · MEDITAÇÕES, V.16 <span>· TRADUÇÃO LIVRE</span></cite></blockquote>
+            <button class="text-link" data-go="1">EXPLORAR A APRESENTAÇÃO <span aria-hidden="true">↓</span></button>
+            <p class="dedication">Com carinho, para você <span aria-hidden="true">♡</span></p>
+          </div>
+          <div class="cover-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="core"><span>e<sup>−</sup></span></div>
+            <span class="orbit-label label-a">OXIDAÇÃO</span><span class="orbit-label label-b">REDUÇÃO</span>
+            <span class="cover-index">01—12</span>
+          </div>
+          <p class="cover-caption">UM GUIA VISUAL DE REAÇÕES QUÍMICAS</p>
+        </section>
+
+        <section class="slide" id="slide-2" data-title="Eletrólise" aria-labelledby="title-2" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">02</span> ELETROQUÍMICA</p><span class="chapter-tag">01 / 04</span></div>
+          <div class="split-layout">
+            <div>
+              <h2 id="title-2">Eletrólise:<br><em>energia que empurra.</em></h2>
+              <p class="lead">Uma fonte externa de corrente conduz uma reação de oxirredução que, nas condições da célula, não acontece espontaneamente.</p>
+              <div class="definition-line"><span class="definition-marker">IDEIA-CHAVE</span><p>Energia elétrica <span class="arrow-word">→</span> transformação química</p></div>
+              <div class="concept-note"><b>Como localizar cada processo?</b><span>Ânodo = oxidação (AN-OX). Cátodo = redução (RED-CAT). Na eletrólise, o ânodo é positivo e o cátodo é negativo.</span></div>
+            </div>
+            <div class="cell-diagram" role="img" aria-label="Diagrama esquemático de uma célula eletrolítica: ânodo positivo, cátodo negativo e fonte externa">
+              <div class="power-source"><span>FONTE</span><b>+</b><i>−</i></div>
+              <div class="wire wire-left"></div><div class="wire wire-right"></div>
+              <div class="beaker"><div class="liquid"><span class="ion ion-one">A⁻</span><span class="ion ion-two">C⁺</span><span class="ion ion-three">A⁻</span><span class="ion ion-four">C⁺</span></div><div class="electrode electrode-a"></div><div class="electrode electrode-c"></div></div>
+              <div class="diagram-label label-anode">ÂNODO <b>+</b><small>oxidação</small></div>
+              <div class="diagram-label label-cathode">CÁTODO <b>−</b><small>redução</small></div>
+              <p class="diagram-note">Os íons migram; elétrons circulam no circuito externo.</p>
+            </div>
+          </div>
+          <div class="rule-strip"><span>NO ÂNODO</span><strong>oxidação</strong><span class="strip-separator">/</span><span>NO CÁTODO</span><strong>redução</strong><span class="strip-source">OpenStax [1]</span></div>
+        </section>
+
+        <section class="slide" id="slide-3" data-title="Ígnea" aria-labelledby="title-3" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">03</span> ELETROQUÍMICA</p><span class="chapter-tag">02 / 04</span></div>
+          <div class="molten-layout">
+            <div class="molten-copy">
+              <p class="section-kicker">SEM ÁGUA, SÓ ÍONS MÓVEIS</p>
+              <h2 id="title-3">Eletrólise<br><em>ígnea.</em></h2>
+              <p class="lead">O composto iônico é aquecido até fundir. Sem água competindo pelas reações, os próprios íons do sal são descarregados.</p>
+              <div class="equation-card">
+                <div class="half-reaction"><span>ÂNODO (+)</span><strong>2 Cl<sup>−</sup><sub>(l)</sub> → Cl<sub>2(g)</sub> + 2 e<sup>−</sup></strong></div>
+                <div class="half-reaction"><span>CÁTODO (−)</span><strong>2 Na<sup>+</sup><sub>(l)</sub> + 2 e<sup>−</sup> → 2 Na<sub>(l)</sub></strong></div>
+                <div class="net-reaction"><span>REAÇÃO GLOBAL</span><strong>2 NaCl<sub>(l)</sub> → 2 Na<sub>(l)</sub> + Cl<sub>2(g)</sub></strong></div>
+              </div>
+              <p class="small-note">Leitura da equação: cada Cl<sup>−</sup> perde elétrons no ânodo; cada Na<sup>+</sup> recebe elétrons no cátodo. Os elétrons se cancelam ao somar as semirreações. O processo Downs produz sódio e cloro. [1]</p>
+            </div>
+            <div class="molten-visual">
+              <div class="heat-mark"><span>NaCl</span><span>NaCl</span><span>NaCl</span><span>NaCl</span></div>
+              <div class="molten-vessel"><div class="molten-surface"></div><div class="molten-anode"></div><div class="molten-cathode"></div><i class="bubble b1"></i><i class="bubble b2"></i><i class="bubble b3"></i><i class="spark s1">+</i><i class="spark s2">−</i></div>
+              <div class="visual-caption"><span>NaCl FUNDIDO</span><span>CALOR + CORRENTE</span></div>
+              <div class="product-label"><b>Cl<sub>2</sub></b><span>gás no ânodo</span><b>Na</b><span>metal no cátodo</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="slide-4" data-title="Aquosa" aria-labelledby="title-4" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">04</span> ELETROQUÍMICA</p><span class="chapter-tag">03 / 04</span></div>
+          <div class="aqueous-layout">
+            <div class="aqueous-copy">
+              <p class="section-kicker">A ÁGUA TAMBÉM REAGE</p>
+              <h2 id="title-4">Eletrólise<br><em>aquosa.</em></h2>
+              <p class="lead">Em solução, os íons do soluto disputam a descarga com espécies da água. O produto depende do conjunto de condições.</p>
+              <div class="condition-list">
+                <div><span class="condition-index">A</span><p><b>Íons presentes</b><small>Soluto e água podem fornecer espécies reativas.</small></p></div>
+                <div><span class="condition-index">B</span><p><b>Concentração e eletrodos</b><small>Podem alterar quais processos predominam.</small></p></div>
+                <div><span class="condition-index">C</span><p><b>Potencial e sobretensão</b><small>O resultado observado nem sempre segue só a previsão ideal. [1]</small></p></div>
+              </div>
+            </div>
+            <div class="aqueous-example">
+              <div class="example-topline"><span>EXEMPLO · SALMOURA CONCENTRADA</span><span class="example-number">01</span></div>
+              <p class="example-intro">NaCl(aq), com célula industrial adequada</p>
+              <div class="product-flow"><div class="flow-electrode plus">+</div><div class="flow-center"><span>corrente contínua</span><i></i></div><div class="flow-electrode minus">−</div></div>
+              <div class="product-results"><div><span>ÂNODO</span><b>Cl<sub>2</sub>(g)</b><small>cloro</small></div><div><span>CÁTODO</span><b>H<sub>2</sub>(g)</b><small>hidrogênio</small></div><div><span>NA SOLUÇÃO</span><b>NaOH(aq)</b><small>hidróxido de sódio</small></div></div>
+              <div class="aqueous-half-reactions"><p><span>CÁTODO · redução da água</span><b>2 H<sub>2</sub>O + 2 e<sup>−</sup> → H<sub>2</sub> + 2 OH<sup>−</sup></b></p><p><span>ÂNODO · oxidação do cloreto</span><b>2 Cl<sup>−</sup> → Cl<sub>2</sub> + 2 e<sup>−</sup></b></p></div>
+              <div class="net-equation"><span>GLOBAL (BALANCEADA)</span><strong>2 NaCl + 2 H<sub>2</sub>O → Cl<sub>2</sub> + H<sub>2</sub> + 2 NaOH</strong></div>
+              <p class="small-note">O Na<sup>+</sup> permanece em solução e acompanha OH<sup>−</sup>, formando NaOH. NaCl diluído pode gerar O<sub>2</sub> junto ao Cl<sub>2</sub> no ânodo: condições importam. [1]</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="slide-5" data-title="Comparar" aria-labelledby="title-5" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">05</span> ELETROQUÍMICA</p><span class="chapter-tag">SÍNTESE</span></div>
+          <h2 id="title-5" class="comparison-title">O que muda é o <em>meio.</em></h2>
+          <div class="comparison-table" role="table" aria-label="Comparação entre eletrólise ígnea e aquosa">
+            <div class="comparison-row table-head" role="row"><span role="columnheader">PONTO DE COMPARAÇÃO</span><span role="columnheader">ÍGNEA</span><span role="columnheader">AQUOSA</span></div>
+            <div class="comparison-row" role="row"><span role="rowheader">Meio</span><span>Composto iônico fundido</span><span>Soluto dissolvido em água</span></div>
+            <div class="comparison-row" role="row"><span role="rowheader">Espécies que podem reagir</span><span>Cátions e ânions do sal</span><span>Íons do soluto <b>e</b> espécies da água</span></div>
+            <div class="comparison-row" role="row"><span role="rowheader">O que prever primeiro</span><span>Descarga do cátion e do ânion</span><span>Comparar sem esquecer as condições experimentais</span></div>
+            <div class="comparison-row" role="row"><span role="rowheader">Exemplo neste guia</span><span>NaCl(l) → Na(l) + Cl₂(g)</span><span>NaCl(aq) → H₂(g), Cl₂(g), NaOH(aq)*</span></div>
+          </div>
+          <p class="comparison-footnote">* Exemplo de salmoura concentrada em condições industriais apropriadas. Em solução diluída, os produtos podem diferir. [1]</p>
+          <div class="memory-rule"><span class="memory-icon">≠</span><p><b>Armadilha comum</b><br>NaCl fundido não é NaCl dissolvido em água: o segundo sistema inclui H₂O como possível reagente.</p></div>
+        </section>
+
+        <section class="slide" id="slide-6" data-title="Adição" aria-labelledby="title-6" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">06</span> QUÍMICA ORGÂNICA</p><span class="chapter-tag">01 / 02</span></div>
+          <div class="organic-layout">
+            <div>
+              <p class="section-kicker">A LIGAÇÃO DUPLA ABRE ESPAÇO</p>
+              <h2 id="title-6">Reação de<br><em>adição.</em></h2>
+              <p class="lead">Átomos ou grupos se ligam aos carbonos de uma ligação múltipla; a ligação π é consumida e a ligação entre carbonos fica mais simples.</p>
+              <div class="pattern-note"><span>PADRÃO</span><b>A = B + X–Y → X–A–B–Y</b><small>Esquema geral; produtos e regioquímica dependem dos reagentes e das condições.</small></div>
+            </div>
+            <div class="reaction-board addition-board">
+              <div class="reaction-label"><span>EXEMPLO · ADIÇÃO DE BROMO AO ETENO</span><span>[2]</span></div>
+              <div class="reaction-sequence">
+                <div class="molecule ethene"><span>H</span><span>H</span><b> C ═ C </b><span>H</span><span>H</span></div>
+                <span class="reaction-plus">+</span>
+                <div class="reagent">Br<sub>2</sub></div>
+                <span class="reaction-arrow">→</span>
+                <div class="product-molecule"><span>Br</span><b>CH<sub>2</sub>—CH<sub>2</sub></b><span>Br</span></div>
+              </div>
+              <div class="reaction-annotations"><span>ETENO</span><span>REAGENTE</span><span>1,2-DIBROMOETANO</span></div>
+              <div class="bond-change"><div class="bond-before"><span class="bond-symbol">C═C</span><small>dupla</small></div><span class="change-arrow">→</span><div class="bond-after"><span class="bond-symbol">C—C</span><small>simples</small></div><p>os dois átomos de Br<br>foram adicionados</p></div>
+              <p class="small-note">Esquema da transformação; o livro de referência apresenta a adição de halogênios a alcenos. [2]</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="slide-7" data-title="Substituição" aria-labelledby="title-7" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">07</span> QUÍMICA ORGÂNICA</p><span class="chapter-tag">02 / 02</span></div>
+          <div class="organic-layout substitution-layout">
+            <div>
+              <p class="section-kicker">UM GRUPO SAI, OUTRO ENTRA</p>
+              <h2 id="title-7">Reação de<br><em>substituição.</em></h2>
+              <p class="lead">Um átomo ou grupo ligado ao substrato é trocado por outro. Há diferentes tipos e mecanismos de substituição.</p>
+              <div class="pattern-note"><span>PADRÃO NUCLEOFÍLICO</span><b>R—X + Nu<sup>−</sup> → R—Nu + X<sup>−</sup></b><small>O nucleófilo Nu substitui o grupo abandonador X. [3]</small></div>
+            </div>
+            <div class="reaction-board substitution-board">
+              <div class="reaction-label"><span>EXEMPLO · SUBSTITUIÇÃO NUCLEOFÍLICA</span><span>[3]</span></div>
+              <div class="substitution-equation">
+                <div class="formula-block"><span class="formula-caption">BROMOMETANO</span><strong>CH<sub>3</sub>—Br</strong></div>
+                <span class="reaction-plus">+</span>
+                <div class="formula-block incoming"><span class="formula-caption">NUCLEÓFILO</span><strong>OH<sup>−</sup></strong></div>
+                <span class="reaction-arrow">→</span>
+                <div class="formula-block product"><span class="formula-caption">METANOL</span><strong>CH<sub>3</sub>—OH</strong></div>
+                <span class="reaction-plus">+</span>
+                <div class="formula-block leaving"><span class="formula-caption">SAI</span><strong>Br<sup>−</sup></strong></div>
+              </div>
+              <div class="substitution-visual"><div class="before-group"><span>CH<sub>3</sub></span><b>—</b><span class="leaving-group">Br</span></div><div class="exchange"><span class="incoming-label">OH<sup>−</sup> entra</span><span class="swap-arrow">⇢</span><span class="outgoing-label">Br<sup>−</sup> sai</span></div><div class="after-group"><span>CH<sub>3</sub></span><b>—</b><span class="new-group">OH</span></div></div>
+              <p class="small-note">No mecanismo SN2, OH<sup>−</sup> forma a ligação C—O enquanto a ligação C—Br se rompe, em uma única etapa. A equação mostra a transformação global. [4]</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide exercise-slide" id="slide-8" data-title="Exercícios 1–5" aria-labelledby="title-8" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">08</span> FIXAÇÃO · 01/04</p><span class="chapter-tag">ELETRÓLISE ÍGNEA</span></div>
+          <div class="quiz-layout">
+            <div class="quiz-intro"><p class="section-kicker">QUESTÕES 01—05</p><h2 id="title-8">Íons em<br><em>movimento.</em></h2><p class="lead">Use as semirreações e a conservação de átomos e carga para decidir.</p><div class="quiz-score"><span>ACERTOS</span><b class="score-value">0 / 20</b></div><button class="reset-quiz" type="button">↻ <span>Refazer exercícios</span></button></div>
+            <div class="quiz-questions">
+              <fieldset class="quiz-question" data-answer="sodium" data-explanation="Na⁺ recebe elétrons no cátodo (redução) e forma sódio líquido. [1]">
+                <legend><span class="question-number">01</span><span>NaCl está fundido. Qual produto se forma no cátodo?</span></legend><div class="answer-options"><button type="button" data-choice="chlorine">Cl<sub>2</sub>(g)</button><button type="button" data-choice="sodium">Na(l)</button><button type="button" data-choice="hydrogen">H<sub>2</sub>(g)</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="chlorine" data-explanation="Cl⁻ perde elétrons no ânodo; dois íons formam uma molécula de Cl₂. [1]">
+                <legend><span class="question-number">02</span><span>No NaCl fundido, qual produto aparece no ânodo?</span></legend><div class="answer-options"><button type="button" data-choice="sodium">Na(l)</button><button type="button" data-choice="chlorine">Cl<sub>2</sub>(g)</button><button type="button" data-choice="oxygen">O<sub>2</sub>(g)</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="reduction" data-explanation="Redução é ganho de elétrons. No cátodo: Na⁺ + e⁻ → Na(l).">
+                <legend><span class="question-number">03</span><span>Ao formar Na(l) a partir de Na⁺, o íon sofre qual processo?</span></legend><div class="answer-options"><button type="button" data-choice="oxidation">Oxidação</button><button type="button" data-choice="reduction">Redução</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="oxidation" data-explanation="Oxidação é perda de elétrons. No ânodo: 2 Cl⁻ → Cl₂ + 2 e⁻.">
+                <legend><span class="question-number">04</span><span>Na eletrólise, o processo que ocorre no ânodo é:</span></legend><div class="answer-options"><button type="button" data-choice="reduction">Redução</button><button type="button" data-choice="oxidation">Oxidação</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="balanced" data-explanation="A equação balanceada conserva 2 Na, 2 Cl e a carga total: 2 NaCl(l) → 2 Na(l) + Cl₂(g). [1]">
+                <legend><span class="question-number">05</span><span>Qual equação global está balanceada para NaCl fundido?</span></legend><div class="answer-options"><button type="button" data-choice="unbalanced">NaCl → Na + Cl<sub>2</sub></button><button type="button" data-choice="balanced">2 NaCl → 2 Na + Cl<sub>2</sub></button><button type="button" data-choice="wrongratio">2 NaCl → Na + 2 Cl<sub>2</sub></button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <div class="quiz-summary" aria-live="polite">Responda às questões; a explicação aparecerá após cada escolha.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide exercise-slide" id="slide-9" data-title="Exercícios 6–10" aria-labelledby="title-9" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">09</span> FIXAÇÃO · 02/04</p><span class="chapter-tag">ELETRÓLISE AQUOSA</span></div>
+          <div class="quiz-layout">
+            <div class="quiz-intro"><p class="section-kicker">QUESTÕES 06—10</p><h2 id="title-9">A água<br><em>participa.</em></h2><p class="lead">Em solução, avalie os íons dissolvidos junto com as espécies da água e as condições do processo.</p><div class="quiz-score"><span>ACERTOS</span><b class="score-value">0 / 20</b></div><button class="reset-quiz" type="button">↻ <span>Refazer exercícios</span></button></div>
+            <div class="quiz-questions">
+              <fieldset class="quiz-question" data-answer="water" data-explanation="Na salmoura, a água recebe elétrons no cátodo; a semirreação forma H₂ e OH⁻. [1]">
+                <legend><span class="question-number">06</span><span>Na salmoura, qual espécie é reduzida no cátodo para formar H₂?</span></legend><div class="answer-options"><button type="button" data-choice="sodiumion">Na⁺</button><button type="button" data-choice="water">H<sub>2</sub>O</button><button type="button" data-choice="chloride">Cl⁻</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="chlorine" data-explanation="NaCl(aq) concentrado em uma célula apropriada produz Cl₂ no ânodo; em solução diluída, O₂ também pode ser observado. [1]">
+                <legend><span class="question-number">07</span><span>Na eletrólise industrial de salmoura concentrada, qual gás é produzido no ânodo?</span></legend><div class="answer-options"><button type="button" data-choice="hydrogen">H<sub>2</sub></button><button type="button" data-choice="oxygen">O<sub>2</sub> exclusivamente</button><button type="button" data-choice="chlorine">Cl<sub>2</sub></button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="naoh" data-explanation="Na⁺ permanece na solução; OH⁻ é gerado no cátodo. Juntos, correspondem a NaOH(aq). [1]">
+                <legend><span class="question-number">08</span><span>De onde vem o NaOH(aq) formado na eletrólise da salmoura?</span></legend><div class="answer-options"><button type="button" data-choice="naoh">Na⁺ da solução e OH⁻ produzido no cátodo</button><button type="button" data-choice="sodiummetal">Na metálico dissolvido</button><button type="button" data-choice="chlorinewater">Cl₂ dissolvido em água</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="mixture" data-explanation="O OpenStax observa que, em NaCl(aq), a oxidação da água e do Cl⁻ pode ocorrer; condições como concentração influenciam a composição gasosa. [1]">
+                <legend><span class="question-number">09</span><span>Qual ressalva é correta para NaCl(aq) diluído no ânodo?</span></legend><div class="answer-options"><button type="button" data-choice="onlychlorine">Forma sempre Cl<sub>2</sub> puro</button><button type="button" data-choice="mixture">Pode haver O<sub>2</sub> e Cl<sub>2</sub></button><button type="button" data-choice="sodium">Forma Na metálico</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="waterreduction" data-explanation="Em solução aquosa, a água é reduzida a H₂ em vez de Na⁺ ser reduzido a sódio metálico nas condições descritas. [1]">
+                <legend><span class="question-number">10</span><span>Por que o produto do cátodo da salmoura não é Na(s)?</span></legend><div class="answer-options"><button type="button" data-choice="waterreduction">A água é reduzida, formando H<sub>2</sub></button><button type="button" data-choice="noions">Não há íons positivos na solução</button><button type="button" data-choice="anode">O ânodo produz sódio</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <div class="quiz-summary" aria-live="polite">Responda às questões; a explicação aparecerá após cada escolha.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide exercise-slide" id="slide-10" data-title="Exercícios 11–15" aria-labelledby="title-10" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">10</span> FIXAÇÃO · 03/04</p><span class="chapter-tag">REAÇÕES DE ADIÇÃO</span></div>
+          <div class="quiz-layout">
+            <div class="quiz-intro"><p class="section-kicker">QUESTÕES 11—15</p><h2 id="title-10">Adição à<br><em>ligação.</em></h2><p class="lead">Procure uma ligação múltipla que se transforma enquanto novos átomos ou grupos se ligam ao substrato.</p><div class="quiz-score"><span>ACERTOS</span><b class="score-value">0 / 20</b></div><button class="reset-quiz" type="button">↻ <span>Refazer exercícios</span></button></div>
+            <div class="quiz-questions">
+              <fieldset class="quiz-question" data-answer="addition" data-explanation="Os dois átomos de Br se ligam aos carbonos do eteno; a ligação C=C passa a C—C. É adição. [2]">
+                <legend><span class="question-number">11</span><span>CH₂=CH₂ + Br₂ → CH₂Br—CH₂Br é uma reação de:</span></legend><div class="answer-options"><button type="button" data-choice="addition">Adição</button><button type="button" data-choice="substitution">Substituição</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="multiplebond" data-explanation="Reações de adição típicas acontecem em ligações múltiplas, como C=C; os grupos adicionados se ligam aos átomos da ligação. [2]">
+                <legend><span class="question-number">12</span><span>Em qual ligação ocorre o padrão de adição mostrado neste guia?</span></legend><div class="answer-options"><button type="button" data-choice="singlebond">C—C simples de um alcano</button><button type="button" data-choice="multiplebond">C=C de um alceno</button><button type="button" data-choice="ionic">Ligação iônica do NaCl</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="pi" data-explanation="Na adição ao alceno, a ligação π da dupla é desfeita e novos vínculos σ são formados com os grupos adicionados; entre os carbonos resta uma ligação simples.">
+                <legend><span class="question-number">13</span><span>Na adição a uma ligação C=C, o que acontece com a ligação dupla?</span></legend><div class="answer-options"><button type="button" data-choice="pi">A parte π é consumida e C—C simples permanece</button><button type="button" data-choice="unchanged">A dupla permanece inalterada</button><button type="button" data-choice="break">A ligação C—C inteira desaparece</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="dibromo" data-explanation="Um Br se liga a cada carbono do eteno; o produto é 1,2-dibromoetano. [2]">
+                <legend><span class="question-number">14</span><span>Qual é o nome do produto de eteno + Br₂?</span></legend><div class="answer-options"><button type="button" data-choice="dibromo">1,2-dibromoetano</button><button type="button" data-choice="bromoethene">Bromoeteno</button><button type="button" data-choice="ethanol">Etanol</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="across" data-explanation="Na adição, átomos/grupos do reagente se ligam aos átomos que compunham a ligação múltipla; não ocorre simplesmente a troca de um grupo por outro.">
+                <legend><span class="question-number">15</span><span>O que caracteriza o padrão geral de uma reação de adição?</span></legend><div class="answer-options"><button type="button" data-choice="across">Grupos se ligam aos átomos da ligação múltipla</button><button type="button" data-choice="replace">Um grupo ligado ao carbono é trocado por outro</button><button type="button" data-choice="split">Uma molécula sempre se divide em duas</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <div class="quiz-summary" aria-live="polite">Responda às questões; a explicação aparecerá após cada escolha.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide exercise-slide" id="slide-11" data-title="Exercícios 16–20" aria-labelledby="title-11" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">11</span> FIXAÇÃO · 04/04</p><span class="chapter-tag">REAÇÕES DE SUBSTITUIÇÃO</span></div>
+          <div class="quiz-layout">
+            <div class="quiz-intro"><p class="section-kicker">QUESTÕES 16—20</p><h2 id="title-11">Troca de<br><em>grupos.</em></h2><p class="lead">Acompanhe o grupo que chega, o grupo que sai e a estrutura do substrato após a transformação.</p><div class="quiz-score"><span>ACERTOS</span><b class="score-value">0 / 20</b></div><button class="reset-quiz" type="button">↻ <span>Refazer exercícios</span></button></div>
+            <div class="quiz-questions">
+              <fieldset class="quiz-question" data-answer="substitution" data-explanation="OH⁻ ocupa o lugar do Br ligado ao carbono; Br⁻ sai. Essa é uma substituição nucleofílica. [4]">
+                <legend><span class="question-number">16</span><span>CH₃Br + OH⁻ → CH₃OH + Br⁻ é uma reação de:</span></legend><div class="answer-options"><button type="button" data-choice="addition">Adição</button><button type="button" data-choice="substitution">Substituição</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="hydroxide" data-explanation="OH⁻ doa um par de elétrons ao carbono e forma a nova ligação C—O; neste caso atua como nucleófilo. [4]">
+                <legend><span class="question-number">17</span><span>Na reação acima, qual espécie entra no carbono como nucleófilo?</span></legend><div class="answer-options"><button type="button" data-choice="bromide">Br⁻</button><button type="button" data-choice="hydroxide">OH⁻</button><button type="button" data-choice="sodium">Na⁺</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="bromide" data-explanation="A ligação C—Br se rompe e Br sai como Br⁻; OH passa a ocupar sua posição. [4]">
+                <legend><span class="question-number">18</span><span>Qual espécie sai como grupo abandonador nessa reação?</span></legend><div class="answer-options"><button type="button" data-choice="hydroxide">OH⁻</button><button type="button" data-choice="bromide">Br⁻</button><button type="button" data-choice="carbon">C</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="replace" data-explanation="Substituição troca um átomo ou grupo ligado ao substrato por outro. Adição incorpora grupos a uma ligação múltipla. [3]">
+                <legend><span class="question-number">19</span><span>Qual característica distingue substituição de adição?</span></legend><div class="answer-options"><button type="button" data-choice="replace">Um grupo substitui outro no substrato</button><button type="button" data-choice="double">Uma ligação simples vira sempre dupla</button><button type="button" data-choice="electrons">Elétrons passam por uma fonte externa</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <fieldset class="quiz-question" data-answer="substitution" data-explanation="CN⁻ ocupa o lugar do Cl ligado ao carbono; Cl⁻ sai como grupo abandonador. Trata-se de substituição nucleofílica. [3]">
+                <legend><span class="question-number">20</span><span>CH₃Cl + CN⁻ → CH₃CN + Cl⁻ pertence a qual classe?</span></legend><div class="answer-options"><button type="button" data-choice="addition">Adição</button><button type="button" data-choice="substitution">Substituição</button><button type="button" data-choice="electrolysis">Eletrólise</button></div><p class="answer-feedback" aria-live="polite"></p>
+              </fieldset>
+              <div class="quiz-summary" aria-live="polite">Responda às questões; a explicação aparecerá após cada escolha.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide sources-slide" id="slide-12" data-title="Fontes" aria-labelledby="title-12" hidden>
+          <div class="slide-heading"><p class="eyebrow"><span class="eyebrow-number">12</span> PARA CONFERIR</p><span class="chapter-tag">FONTES PRIMÁRIAS</span></div>
+          <div class="sources-layout">
+            <div><p class="section-kicker">CIÊNCIA COM RASTRO</p><h2 id="title-12">Continue<br><em>investigando.</em></h2><p class="lead">Conteúdo sintetizado de livros didáticos universitários abertos da OpenStax, publicados pela Rice University.</p><p class="source-license">As explicações deste material foram reescritas e resumidas. Consulte os capítulos originais para contexto, condições e figuras completas.</p></div>
+            <ol class="source-list">
+              <li><span>[1]</span><div><b>OpenStax · Chemistry 2e</b><a href="https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis" target="_blank" rel="noopener noreferrer">17.7 Electrolysis ↗</a><small>Eletrólise de NaCl fundido, água e solução aquosa de NaCl; produtos e condições experimentais.</small></div></li>
+              <li><span>[2]</span><div><b>OpenStax · Organic Chemistry</b><a href="https://openstax.org/books/organic-chemistry/pages/8-3-addition-of-halogen-to-alkenes" target="_blank" rel="noopener noreferrer">8.3 Addition of Halogens to Alkenes ↗</a><small>Adição de halogênios a alcenos.</small></div></li>
+              <li><span>[3]</span><div><b>OpenStax · Organic Chemistry</b><a href="https://openstax.org/books/organic-chemistry/pages/11-1-the-discovery-of-nucleophilic-substitution-reactions" target="_blank" rel="noopener noreferrer">11.1 Nucleophilic Substitution ↗</a><small>Conceito de substituição nucleofílica e exemplos.</small></div></li>
+              <li><span>[4]</span><div><b>OpenStax · Organic Chemistry</b><a href="https://openstax.org/books/organic-chemistry/pages/11-2-the-sn2-reaction" target="_blank" rel="noopener noreferrer">11.2 The SN2 Reaction ↗</a><small>Exemplo CH<sub>3</sub>Br + OH<sup>−</sup> → CH<sub>3</sub>OH + Br<sup>−</sup> e mecanismo SN2.</small></div></li>
+              <li><span>[5]</span><div><b>Marco Aurélio · Meditações</b><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener noreferrer">Livro V, seção 16 · tradução de George Long ↗</a><small>Citação apresentada aqui em tradução livre para o português.</small></div></li>
+            </ol>
+          </div>
+          <footer class="source-footer"><div class="source-signoff"><span>FEITO PARA ESTUDAR, NÃO PARA DECORAR</span><span class="love-note">Eu te amo.</span></div><button class="text-link" data-go="0">VOLTAR AO INÍCIO <span aria-hidden="true">↑</span></button></footer>
+        </section>
+      </div>
+    </div>
+
+    <footer class="deck-controls">
+      <div class="progress-wrap"><span class="progress-current" id="progress-current">01</span><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><span class="progress-total">12</span></div>
+      <p class="keyboard-hint">NAVEGAR <kbd>←</kbd> <kbd>→</kbd></p>
+      <div class="control-buttons"><button class="control-button" id="previous-slide" type="button" aria-label="Slide anterior" title="Slide anterior"><span aria-hidden="true">←</span></button><button class="control-button next-button" id="next-slide" type="button" aria-label="Próximo slide" title="Próximo slide"><span aria-hidden="true">→</span></button></div>
+    </footer>
+  </main>
+</body>
+</html>
